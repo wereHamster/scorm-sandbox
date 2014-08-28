@@ -21,6 +21,7 @@ executable scorm-sandbox
         base
       , bytestring              >= 0.10.0.2 && < 0.11
       , text                    >= 1.1.1    && < 1.2
+      , safe                    >= 0.3.3    && < 0.4
 
       -- SCORM package handling
       , zip-archive             >= 0.2.3.4  && < 0.3
