@@ -4,7 +4,7 @@ This is a thin wrapper for testing SCORM 2004 package with a sandboxed Javascrip
 
 ```
 cabal install cabalg
-cabalg https://github.com/musically-ut/scorm-sandbox
+cabalg https://github.com/wereHamster/scorm-sandbox
 ```
 
 This uses [cabalg](https://hackage.haskell.org/package/cabalg).
