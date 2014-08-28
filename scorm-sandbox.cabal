@@ -1,0 +1,41 @@
+name          : scorm-sandbox
+version       : 0.0.1
+synopsis      : SCORM sandbox
+description   : Tool for testing SCORM packages.
+license       : GPL-3
+author        : Utkarsh Upadhyay
+maintainer    : Utkarsh Upadhyay
+build-type    : Simple
+cabal-version : >= 1.18
+
+extra-source-files:
+    scorm-sandbox.js
+  , index.html
+
+executable scorm-sandbox
+    default-language: Haskell2010
+    ghc-options: -threaded -Wall
+
+    main-is: scorm-sandbox.hs
+    build-depends:
+        base
+      , bytestring              >= 0.10.0.2 && < 0.11
+      , text                    >= 1.1.1    && < 1.2
+      , safe                    >= 0.3.3    && < 0.4
+
+      -- SCORM package handling
+      , zip-archive             >= 0.2.3.4  && < 0.3
+      , temporary               >= 1.2.0.3  && < 1.3
+      , directory               >= 1.2.0.1  && < 1.3
+      , filepath                >= 1.3.0.1  && < 1.4
+
+      -- XML parsing
+      , hxt                     >= 9.3.1.1  && < 9.4
+      , hxt-xpath               >= 9.1.2.1  && < 9.2
+
+      -- Web server files
+      , scotty                  >= 0.9.0    && < 0.10.0
+      , wai-middleware-static   >= 0.6.0    && < 0.7.0
+      , file-embed              >= 0.0.7    && < 0.0.8
+
+
