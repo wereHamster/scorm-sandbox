@@ -1,4 +1,4 @@
-var api = window.API_1484_11 = {};
+var api = window.API_1484_11 = window.API = {};
 
 api.Initialize = function() {
     return true;
@@ -14,7 +14,8 @@ api.GetValue = function(k) {
 
 var values = {};
 
-values['cmi.learner_id'] = 'LearnerId';
+values['cmi.learner_id']      = 'Random-Learner-Id: ' + (Math.ceil(1000000 * Math.random()));
+values['cmi.core.student_id'] = 'Random-Learner-Id: ' + (Math.ceil(1000000 * Math.random()));
 
 api.SetValue = function(k, v) {
     values[k] = v;

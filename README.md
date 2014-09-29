@@ -1,4 +1,4 @@
-This is a thin wrapper for testing SCORM 2004 package with a sandboxed Javascript API.
+This is a thin wrapper for testing SCORM 1.2 and 2004 package with a sandboxed Javascript API.
 
 ## Installation
 
