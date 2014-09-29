@@ -14,8 +14,9 @@ api.GetValue = function(k) {
 
 var values = {};
 
-values['cmi.learner_id']      = 'Random-Learner-Id: ' + (Math.ceil(1000000 * Math.random()));
-values['cmi.core.student_id'] = 'Random-Learner-Id: ' + (Math.ceil(1000000 * Math.random()));
+var randomUserId = (new Date()).toString() + ' @' + Math.ceil(1000 * Math.random());
+values['cmi.learner_id']      = 'Random-Learner-Id: ' + randomUserId;
+values['cmi.core.student_id'] = 'Random-Learner-Id: ' + randomUserId;
 
 api.SetValue = function(k, v) {
     values[k] = v;
